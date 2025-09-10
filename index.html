@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الحرس الوطني - التقديم</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="amiri_guard_logo.png" alt="شعار الحرس الوطني" class="logo">
+                <h1 class="site-title">الحرس الوطني</h1>
+            </div>
+            <nav class="nav">
+                <a href="#home" class="nav-link active">الرئيسية</a>
+                <a href="#about" class="nav-link">عن الحرس</a>
+                <a href="#requirements" class="nav-link">الشروط</a>
+                <a href="#apply" class="nav-link">التقديم</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="hero-title">انضم إلى الحرس الوطني</h2>
+                    <p class="hero-subtitle">شرف الخدمة وعزة الوطن</p>
+                    <p class="hero-description">
+                        نحن نبحث عن أفضل الكوادر للانضمام إلى صفوف الحرس الوطني المرموق. 
+                        إذا كنت تتمتع بالشجاعة والإخلاص والاستعداد لخدمة الوطن، فنحن ندعوك للتقديم.
+                    </p>
+                    <a href="#apply" class="cta-button">قدم الآن</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">عن الحرس الوطني</h2>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="card-icon">🛡️</div>
+                        <h3>الحماية والأمان</h3>
+                        <p>نحن نوفر أعلى مستويات الحماية والأمان للقيادة والمؤسسات الحيوية</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">⭐</div>
+                        <h3>التميز والإتقان</h3>
+                        <p>نسعى دائماً للتميز في الأداء والإتقان في تنفيذ المهام الموكلة إلينا</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">🎖️</div>
+                        <h3>الشرف والكرامة</h3>
+                        <p>نحمل شرف الخدمة بكل فخر واعتزاز، ونحافظ على كرامة المؤسسة</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="requirements" class="requirements">
+            <div class="container">
+                <h2 class="section-title">شروط التقديم</h2>
+                <div class="requirements-list">
+                    <div class="requirement-item">
+                        <span class="requirement-icon">✓</span>
+                        <span>أن يكون المتقدم مواطناً</span>
+                    </div>
+                    <div class="requirement-item">
+                        <span class="requirement-icon">✓</span>
+                        <span>العمر بين 13-30 سنة</span>
+                    </div>
+                    <div class="requirement-item">
+                        <span class="requirement-icon">✓</span>
+                        <span>اللياقة البدنية والصحية الجيدة</span>
+                    </div>
+                    <div class="requirement-item">
+                        <span class="requirement-icon">✓</span>
+                        <span>حسن السيرة والسلوك</span>
+                    </div>
+                    <div class="requirement-item">
+                        <span class="requirement-icon">✓</span>
+                        <span>المؤهل التعليمي: الثانوية العامة كحد أدنى</span>
+                    </div>
+                    <div class="requirement-item">
+                        <span class="requirement-icon">✓</span>
+                        <span>عدم وجود سوابق جنائية</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="apply" class="application">
+            <div class="container">
+                <h2 class="section-title">نموذج التقديم</h2>
+                <form id="applicationForm" class="application-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">الاسم الكامل</label>
+                            <input type="text" id="fullName" name="fullName" required placeholder="الاسم الأول والأوسط والأخير">
+                        </div>
+                        <div class="form-group">
+                            <label for="nationalId">الايدي ب لعبه</label>
+                            <input type="text" id="nationalId" name="nationalId" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="discordUsername">اليوزر في دسكورد</label>
+                            <input type="text" id="discordUsername" name="discordUsername" required placeholder="مثال: username#1234">
+                        </div>
+                        <div class="form-group">
+                            <label for="discordId">معرف دسكورد (ID)</label>
+                            <input type="text" id="discordId" name="discordId" required placeholder="مثال: 123456789012345678">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="age">العمر</label>
+                        <input type="number" id="age" name="age" required min="13" max="60">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="availability">مدة تواجد</label>
+                        <textarea id="availability" name="availability" rows="4" required placeholder="مثال 7 ساعات بل يوم"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="experience">الخبرات السابقة</label>
+                        <textarea id="experience" name="experience" rows="4" required placeholder="اذكر أي خبرات عسكرية أو أمنية أو إدارية سابقة"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="motivation">سبب الرغبة في الانضمام للحرس الوطني</label>
+                        <textarea id="motivation" name="motivation" rows="4" required placeholder="اكتب الأسباب والدوافع التي تجعلك ترغب في الانضمام"></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <span class="checkmark"></span>
+                            أوافق على الشروط والأحكام وأؤكد صحة البيانات المقدمة
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">
+                        <span class="button-text">إرسال الطلب</span>
+                        <span class="loading-spinner"></span>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 الحرس الوطني. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-icon">✅</div>
+            <h3>تم إرسال طلبك بنجاح!</h3>
+            <p>شكراً لك على التقديم. سيتم مراجعة طلبك والتواصل معك قريباً.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
